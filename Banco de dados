@@ -1,0 +1,73 @@
+create database Bd_loja_cem;
+use Bd_loja_cem; 
+create table cliente (
+id_cliente int not null auto_increment,
+nome varchar (100),
+sexo char(1),
+cpf varchar(20), 
+data_nasc date, 
+primary key (id_cliente) 
+); 
+desc cliente;
+
+insert into cliente (nome, sexo, cpf, data_nasc)
+values ("Pedro", "M", "437898938", "2003-03-26");
+select * from cliente;
+
+create table telefone(
+id_telefone int not null auto_increment,
+cod_d varchar (64),
+fone1 varchar (30),
+fone2 varchar (46),
+primary key (id_telefone)
+);
+desc telefone;  
+
+insert into telefone (cod_d, fone1, fon2)
+values ("842", "8728-0548", "4579-3895");
+select * from telefone; 
+
+create table endereco(
+id_endereco int not null auto_increment,
+cod_a varchar (37),
+rua varchar (70),
+bairro varchar (46),
+cidade varchar (437),
+uf varchar (67),
+CEP varchar (96),
+primary key (id_endereco)
+);
+desc endereco;  
+
+insert into enderco (cod_a, rua, bairro, cidade, uf, CEP)
+values("929," "rua_das_aves", "bairro_dos_afogados", )
+
+
+create table venda(
+id_venda int not null auto_increment,
+cod_d varchar (34),
+cod_Prod varchar (30),
+cod_tran varchar (58),
+valor varchar(10),
+QTD char (245),
+Data_confia varchar (36),
+primary key (id_telefone)
+);
+desc telefone;  
+
+create table produto(
+id_produto int not null auto_increment,
+nome varchar (34),
+modelo varchar (30),
+primary key (id_produto)
+);
+desc telefone;  
+
+create table transporte (
+id_transporte int not null auto_increment,
+nome varchar (64),
+cnpj varchar (30),
+primary key (id_transporte)
+);
+
+desc transporte;  
